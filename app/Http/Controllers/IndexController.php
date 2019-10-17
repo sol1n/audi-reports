@@ -256,7 +256,7 @@ class IndexController extends Controller
 
         return view('index', [
             'data' => $results,
-            'title' => 'sdfsdf'
+            'title' => 'Тест-драйв'
         ]);
     }
 }
