@@ -144,7 +144,7 @@ class IndexController extends Controller
                 ],
             ],
             'universality' => [
-                'title' => 'Универсальность автомобиля в повседневных условиях',
+                'title' => 'Универсальность в повседневных условиях',
                 'questions' => [
                     'control_0_6_k1ug7rdn' => true,
                     'control_0_6_k1ug4q34' => true,

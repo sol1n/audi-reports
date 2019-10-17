@@ -22,10 +22,10 @@ $(function(){
 						min: 0,
 						max: 10,
 						stepSize: 1,
-						fontSize: 14
+						fontSize: 20
 					},
 					pointLabels: {
-				    	fontSize: 14,
+				    	fontSize: 20,
 				    	fontColor: '#111'
 				    }
 				},
@@ -36,6 +36,12 @@ $(function(){
 		                }
 		            }
 
+		        },
+		        "legend": {
+		            "display": true,
+		            "labels": {
+		                "fontSize": 18
+		            }
 		        }
 			}
 		});
