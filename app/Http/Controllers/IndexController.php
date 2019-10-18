@@ -251,12 +251,22 @@ class IndexController extends Controller
             ? Carbon::parse(request()->get('date'), 'Europe/Moscow')
             : Carbon::now();
 
-        $results = $this->getResults($day);
+        $beginDate = Carbon::parse('2019-10-18', 'Europe/Moscow');
+        $endDate = Carbon::parse('2019-12-04', 'Europe/Moscow');
 
+        $dates = [];
+        while ($beginDate < $endDate) {
+            $dates[] = $beginDate->copy();
+            $beginDate = $beginDate->addDays(1);
+        }
+
+        $results = $this->getResults($day);
 
         return view('index', [
             'data' => $results,
-            'title' => 'Тест-драйв'
+            'title' => 'Тест-драйв',
+            'dates' => $dates,
+            'currentDay' => $day
         ]);
     }
 }

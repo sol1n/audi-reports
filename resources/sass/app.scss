@@ -37,6 +37,12 @@ html {
     min-width: 100%;
 }
 
+select {
+	position: absolute;
+	top: 20px;
+	right: 20px;
+}
+
 .wrapper {
 	width: 100%;
 	max-width: 1500px;

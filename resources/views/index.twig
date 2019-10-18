@@ -12,12 +12,16 @@
     <body>
         <div class="wrapper">
             <h1>{{ title }}</h1>
+            <select>
+                {% for date in dates %}
+                    <option {% if date|date('d-m-Y') == currentDay|date('d-m-Y') %}selected{% endif %} value="{{ date|date('d-m-Y') }}">{{ date|date('d-m-Y') }}</option>
+                {% endfor %}
+            </select>
             <div class="plot">
                 <div class="plot-wrapper">
                     <canvas data-plot="{{ data|json_encode }}"></canvas>
                 </div>
             </div>
-
 
         </div>
     </body>

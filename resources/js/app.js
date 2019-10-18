@@ -52,36 +52,8 @@ $(function(){
 
     outerContent.scrollLeft((innerContent.width() - outerContent.width()) / 2);
 
-    $('.share button').on('click', function() {
-    	var input = $(this).siblings('input');
-
-		var range,
-			selection;
-		
-		if (navigator.userAgent.match(/ipad|iphone/i)) {
-			range = document.createRange();
-			range.selectNodeContents(input[0]);
-			selection = window.getSelection();
-			selection.removeAllRanges();
-			selection.addRange(range);
-			input[0].setSelectionRange(0, 999999);
-		}
-		else {
-			input.select();
-		}
-		document.execCommand('copy');
-
-    	$(this).text('Скопировано');
-
-    	if (navigator.userAgent.match(/ipad|iphone/i)) {
-    		input[0].setSelectionRange(0, 0);
-    		range.selectNodeContents(input[0]);
-			selection = window.getSelection();
-			selection.removeAllRanges();
-    	} else {
-    		input.blur();
-    	}
-
-    	console.log(input);
-    });
+    $('select').on('change', function() {
+    	var value = $(this).val();
+    	document.location.href = document.location.origin + '?date=' + value;
+    })
 })
