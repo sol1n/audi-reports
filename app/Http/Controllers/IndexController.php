@@ -241,7 +241,7 @@ class IndexController extends Controller
                 $parts['universality']['title'],
                 $parts['engine']['title'],
             ],
-            'datasets' => $datasets
+            'datasets' => array_reverse($datasets)
         ];
     }
 
