@@ -234,7 +234,7 @@ class IndexController extends Controller
             : Carbon::now();
 
         $beginDate = Carbon::parse('2020-03-02', 'Europe/Moscow');
-        $endDate = Carbon::parse('2020-03-25', 'Europe/Moscow');
+        $endDate = Carbon::parse('2020-03-28', 'Europe/Moscow');
 
         $dates = [];
         while ($beginDate < $endDate) {
