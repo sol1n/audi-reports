@@ -51,10 +51,8 @@ class IndexController extends Controller
     private function getResults(Carbon $date)
     {
         $formIds = [
-            '2995531c-f572-46b6-932b-006fa860c52b',
-            '144281bb-7982-452a-8bf0-cf14c2c14771',
-            'ff98d4c8-5c7f-4ce5-9c97-21c50c76cc59',
-            '63060da0-f3fa-438a-b01b-4cda5cb367f7',
+            '3221ff92-07ee-45c6-95ab-c9ca0ce67335',
+            'a9bc5c3d-9dc0-44ee-93cd-d5e54ce7c6c2',
             '7202aa43-c6fa-4928-84b2-9817fccd4f97'
         ];
 
@@ -86,81 +84,65 @@ class IndexController extends Controller
             'suspension' => [
                 'title' => 'Работа подвески',
                 'questions' => [
-                    'control_0_0_k1ug702y' => true,
-                    'control_0_0_k1ug45vb' => true,
-                    'control_0_0_k1ug18lj' => true,
-                    'control_0_0_k1ufx2v0' => true,
-                    'control_0_0_k1ua1vyo' => true,
+                    'control_0_0_k74qbdab' => true,
+                    'control_0_0_k74q1k84' => true,
+                    'control_0_0_k74pqlwb' => true,
                 ],
             ],
             'comfort' => [
                 'title' => 'Общий комфорт',
                 'questions' => [
-                    'control_0_1_k1ug75cf' => true,
-                    'control_0_1_k1ug4b4u' => true,
-                    'control_0_1_k1ug1fqt' => true,
-                    'control_0_1_k1ufx9tu' => true,
-                    'control_0_6_k1ugf7nv' => true,
+                    'control_0_1_k74qbx2a' => true,
+                    'control_0_1_k74q2q59' => true,
+                    'control_0_1_k74psa4h' => true,
                 ],
             ],
             'back' => [
                 'title' => 'Комфорт задних пассажиров',
                 'questions' => [
-                    'control_0_2_k1ug7bla' => true,
-                    'control_0_2_k1ug4ea5' => true,
-                    'control_0_2_k1ug1j4f' => true,
-                    'control_0_2_k1ufxers' => true,
-                    'control_0_7_k1ugg9ky' => true,
+                    'control_0_2_k74qcgfi' => true,
+                    'control_0_2_k74q3m8f' => true,
+                    'control_0_2_k74pt85m' => true,
                 ],
             ],
             'multimedia' => [
                 'title' => 'Оснащение и мультимедиа',
                 'questions' => [
-                    'control_0_3_k1ug7e4j' => true,
-                    'control_0_3_k1ug4h7e' => true,
-                    'control_0_3_k1ug1mce' => true,
-                    'control_0_3_k1ufxgl6' => true,
-                    'control_0_1_k1ua2yiq' => true,
+                    'control_0_3_k74qcwje' => true,
+                    'control_0_3_k74q41xc' => true,
+                    'control_0_3_k74pu1vt' => true,
                 ]
             ],
             'controllability' => [
                 'title' => 'Управляемость и маневренность',
                 'questions' => [
-                    'control_0_4_k1ug7iyv' => true,
-                    'control_0_4_k1ug4kbz' => true,
-                    'control_0_4_k1ug1pi6' => true,
-                    'control_0_4_k1ufxlnx' => true,
-                    'control_0_2_k1ua33o6' => true,
+                    'control_0_4_k74qddtc' => true,
+                    'control_0_4_k74q58p4' => true,
+                    'control_0_4_k74pus4q' => true,
                 ]
             ],
             'ergonomics' => [
                 'title' => 'Эргономика автомобиля',
                 'questions' => [
-                    'control_0_5_k1ug7n75' => true,
-                    'control_0_5_k1ug4n33' => true,
-                    'control_0_5_k1ug1sw6' => true,
-                    'control_0_5_k1ufxp5q' => true,
-                    'control_0_3_k1ua39bq' => true,
+                    'control_0_5_k74qdspr' => true,
+                    'control_0_5_k74q6c7t' => true,
+                    'control_0_5_k74pvbyt' => true,
                 ],
             ],
             'universality' => [
                 'title' => 'Универсальность в повседневных условиях',
                 'questions' => [
-                    'control_0_6_k1ug7rdn' => true,
-                    'control_0_6_k1ug4q34' => true,
-                    'control_0_6_k1ug1xd3' => true,
-                    'control_0_6_k1ufxsyq' => true,
-                    'control_0_4_k1ua3dum' => true,
+                    'control_0_6_k74qehxy' => true,
+                    'control_0_6_k74q6qum' => true,
+                    'control_0_6_k74pvslh' => true,
                 ]
             ],
             'engine' => [
                 'title' => 'Работа двигателя и КПП',
                 'questions' => [
-                    'control_0_7_k1ug7uob' => true,
-                    'control_0_7_k1ug4tbt' => true,
-                    'control_0_7_k1ug234a' => true,
-                    'control_0_7_k1ufxwxk' => true,
-                    'control_0_5_k1ua3hsp' => true,
+                    'control_0_7_k74qf37c' => true,
+                    'control_0_7_k74q7a6s' => true,
+                    'control_0_7_k74pwg9o' => true,
                 ]
             ]
         ];
