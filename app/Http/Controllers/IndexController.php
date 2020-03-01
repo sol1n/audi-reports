@@ -53,7 +53,7 @@ class IndexController extends Controller
         $formIds = [
             '3221ff92-07ee-45c6-95ab-c9ca0ce67335',
             'a9bc5c3d-9dc0-44ee-93cd-d5e54ce7c6c2',
-            '7202aa43-c6fa-4928-84b2-9817fccd4f97'
+            '13bd411a-f57f-4057-9f6e-7de3a90842f8'
         ];
 
         $forms = $form = Form::list($this->user->backend, [
