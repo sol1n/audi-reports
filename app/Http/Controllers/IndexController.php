@@ -237,9 +237,9 @@ class IndexController extends Controller
         $endDate = Carbon::parse('2020-03-28', 'Europe/Moscow');
 
         $dates = [];
-        while ($beginDate < $endDate) {
-            $dates[] = $beginDate->copy();
+        while ($beginDate <= $endDate) {
             $beginDate = $beginDate->addDays(1);
+            $dates[] = $beginDate->copy();
         }
 
         $results = $this->getResults($day);
